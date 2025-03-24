@@ -1,12 +1,14 @@
 
 import './App.css'
+import { RandomFox } from './RandomFox'
 
 function App() {
   
 
   return (
     <>
-      <h1>Hola!</h1>
+      <h1>Imagenes de zorros aleatorios</h1>
+      <RandomFox />
     </>
   )
 }
