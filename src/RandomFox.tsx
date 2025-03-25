@@ -1,16 +1,11 @@
-
-// Random para obtener zorros aleatorios entre 1 y 123
-
-const random = Math.floor(Math.random() * 123) + 1
+type Props = {image: string}
 
 
-export const RandomFox = () => {
-
-    const image = `https://randomfox.ca/images/${random}.jpg`
+export const RandomFox = ({image}: Props) => {
 
   return (
     <>
-        <img width={320} height='auto' className='roundend' src={image} alt='Zorritos meme' />
+        <img width={320} height='auto' className='roundend' src={ image} alt='Zorritos meme' />
     </>
   )
 }
