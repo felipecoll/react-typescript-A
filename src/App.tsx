@@ -14,6 +14,8 @@ function App() {
 
   const [images,setImages] = useState<Array<ImageItems>>([]);
 
+  // Recordar documentar procesos para recordar los pasos a seguir
+
   const addNewFox: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.preventDefault()
     const newItem = {id: generateId(), url:`https://randomfox.ca/images/${random()}.jpg`}
